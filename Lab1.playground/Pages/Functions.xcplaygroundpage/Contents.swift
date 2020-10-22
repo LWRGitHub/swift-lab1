@@ -91,11 +91,21 @@ resize2(fromWidth: 20, fromHeight: 30, toWidth: 100, toHeight: 400)
  */
 // Write your challenge code here:
 
+func calculateHeight(num1: Int, num2: Int)->Int{
+    return num1 * num2
+}
 
+func getPerimeter(side1: Int, side2: Int, side3: Int, side4: Int)->Int{
+    return side1 + side2 + side3 + side4
+}
 
-
-
-
+func getOddPerimeter(arr: [Int])->Int{
+    var answer = 0
+    for num in arr {
+        answer = answer + num
+    }
+    return answer
+}
 
 
 //: [Previous](@previous)    [Next](@next)

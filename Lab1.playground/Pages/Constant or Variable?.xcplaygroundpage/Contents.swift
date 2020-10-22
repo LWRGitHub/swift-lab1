@@ -11,7 +11,16 @@
  - Goal number of steps: The user's goal for number of steps to take each day
  - Average heart rate: The user's average heart rate over the last 24 hours
  */
-
+let userName = "Logan"
+//user name in this game stays the same
+var age = 29
+//age changes as time goes on
+var numStepsToday = 1000
+//steps can change
+var stepGoal = 500
+//you may wnat to add a better goal
+var haertRate = 1.6/80
+//heart rate can change
 
 
 

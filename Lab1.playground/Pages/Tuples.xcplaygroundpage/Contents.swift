@@ -54,16 +54,20 @@ let yCoord = coordinate.y
  
  */
 
-
 // Write your answers here:
+
 
 import Foundation // you need Foundation imported for the sqrt() function
 
+let startCoord: (x: Double, y: Double) = (5.1 , 8.3)
+let endCoord: (x: Double, y: Double) = (375 , 667)
 
+let disBetween = ((endCoord.x - startCoord.x)*(endCoord.x - startCoord.x) + (endCoord.y - startCoord.y)*(endCoord.y - startCoord.y)).squareRoot()
 
+var curncyUsd: (type: String, value: Double) = ("usd" , 1.00)
+var curncyCad: (type: String, value: Double) = ("cad", curncyUsd.value * 1.29)
+var curncyAud: (type: String, value: Double) = ("aud", curncyUsd.value * 1.36)
 
-
-
-
+print("[\(curncyUsd.value)] [\(curncyUsd.type)] is [\(curncyCad.value)] [\(curncyCad.type)] is [\(curncyAud.value)] [\(curncyAud.type)]")
 
 //: [Previous](@previous)    [Next](@next)
